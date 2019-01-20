@@ -1,4 +1,71 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
+  font-family: serif;
   font-size: 10px;
 }
+
+h1 {
+font-size: 2.5em
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 25px;
+}
+
+div {
+  height: 300px;
+  margin: 1% 0;
+  width: 100%;
+  padding: 30px;
+  float: left;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  background-color: #dadada
+}
+
+.preview-baku {
+background-image:url(/images/baku.jpg);
+background-size:cover;
+padding: 30px;
+}
+
+.preview-london {
+background-image:url(/images/london.png);
+background-size:cover;
+padding: 30px;
+}
+
+.preview-madrid {
+background-image:url(/images/madrid.jpg);
+background-size:cover;
+padding: 30px;
+}
+
+.preview-rome {
+background-image:url(/images/rome.jpg);
+background-size:cover;
+padding: 30px;
+}
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+
+  @media screen and (min-width: 991px){
+     div {
+      margin: 1%;
+      width: 23%;
+    }
